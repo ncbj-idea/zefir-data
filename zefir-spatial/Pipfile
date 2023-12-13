@@ -1,0 +1,30 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+geoalchemy2 = "*"
+sqlalchemy = "*"
+geopandas = "*"
+pillow = "*"
+openpyxl = "*"
+pydantic = "*"
+alembic = "*"
+requests = "*"
+owslib = "*"
+deprecation = "*"
+sqlalchemy-json = "*"
+retrying = "*"
+scikit-image = "*"
+psycopg2-binary = "*"
+
+[dev-packages]
+black = "*"
+mypy = "*"
+flake8 = "*"
+sqlalchemy = {extras = ["mypy"], version = "*"}
+types-requests = "*"
+
+[requires]
+python_version = "3.9"

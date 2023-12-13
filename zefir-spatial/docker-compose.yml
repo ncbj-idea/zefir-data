@@ -1,0 +1,14 @@
+version: "3.3"
+services:
+  db:
+    image: postgis/postgis:latest
+    ports:
+      - 5432:5432
+    volumes:
+      - db-data:/var/lib/postgresql/data/pgdata
+      - ./:/zefir_spatial
+    env_file:
+      - .env
+    restart: unless-stopped
+volumes:
+  db-data:
